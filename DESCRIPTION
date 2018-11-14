@@ -1,0 +1,16 @@
+Package: postlogic
+Type: Package
+Title: Infix and Postfix Logic Operators
+Version: 0.1.0
+Authors@R: person("Andrew", "Redd", role = c("aut", "cre")
+                 , email = "Andrew.Redd@hsc.utah.edu"
+                 , comment = c(ORCID = "https://orcid.org/000-0002-6149-2438")
+                 )
+Maintainer: Andrew Redd <amredd@gmail.com>
+Description: Added postfix and infix logic operators for
+    if, then, unless, and otherwise.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.1.0.9000
