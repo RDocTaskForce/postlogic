@@ -18,7 +18,7 @@ the alternate value is returned.}
 \item{prior \%unless\% proposition}{An \code{\%if\%} statement.}
 }
 \description{
-These give logic that can be used as a qualifying statement that occures after the
+These give logic that can be used as a qualifying statement that occurs after the
 value statement.
 Take note that the `%unless%` and `%then%` operators follow the same order of operations
 as other custom infix operators and so care should be taken that the effect is as desired.
