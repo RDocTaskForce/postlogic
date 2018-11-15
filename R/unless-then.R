@@ -1,38 +1,9 @@
-#' @name unless-then
-#' @title Infix unless-then logic
-#'
-#' @description
-#' These give logic that can be used as a qualifying statement that occures after the
-#' value statement.
-#' Take note that the `%unless%` and `%then%` operators follow the same order of operations
-#' as other custom infix operators and so care should be taken that the effect is as desired.
-#'
-#' @usage
-#' prior %unless% proposition
-#' prior %unless% proposition %then% alternate
-#'
-#' @param prior Value to be returned unless proposition returns FALSE.
-#' @param proposition The logical statement to condition on.
-#' @param alternate When proposition returns true and the %then% is provided
-#'                  the alternate value is returned.
-#'
-#' @family postlogic
-#' @examples
-#'     x <- 4
-#'     x <- sqrt(x) %unless% is.complex(x) %then% "This is too hard :("
-#'     x # 2
-#'
-#'     x <- 4i
-#'     x <- sqrt(x) %unless% is.complex(x) %then% "This is too hard :("
-#'     x # This is too hard :(
-#' @export %unless% %then%
+
 `%unless%` <- function( prior, proposition ){
     if (!proposition) return(prior)
 }
-#' @rdname unless-then
-#' @export
-`%then%` <- function( clause, alternate){
-    clause.call <- substitute(clause)
+`%then%` <- function( `%unless% prior proposition`, alternate){
+    clause.call <- substitute(`%unless% prior proposition`)
     if (clause.call[[1]] != '%unless%')
         stop("Infix opperator '%then%' can only be used following an '%unless%' infix.")
 
