@@ -44,6 +44,13 @@ if(FALSE){#@example
     x <- (x+1) %if% is.numeric(x) %otherwise% "Hmm this isn't right O.o"
     x # Hmm this isn't right
 }
-
+if(FALSE){#@testing return statements
+    f <- function(bail = FALSE){
+        return("Geronimo") %if% bail
+        return("Smooth sailing")
+    }
+    expect_identical(f(), "Smooth sailing")
+    expect_identical(f(TRUE), "Geronimo")
+}
 
 
