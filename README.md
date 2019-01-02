@@ -1,9 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-postlogic
-=========
+`postlogic` <img src="man/figures/logo.png" align="right" height=140/>
+======================================================================
 
-[![Travis build status](https://travis-ci.org/RDocTaskForce/postlogic.svg?branch=master)](https://travis-ci.org/RDocTaskForce/postlogic) [![Coverage status](https://codecov.io/gh/RDocTaskForce/postlogic/branch/master/graph/badge.svg)](https://codecov.io/github/RDocTaskForce/postlogic?branch=master)
+[![Travis build status](https://travis-ci.org/RDocTaskForce/postlogic.svg?branch=master)](https://travis-ci.org/RDocTaskForce/postlogic) [![Coverage status](https://codecov.io/gh/RDocTaskForce/postlogic/branch/master/graph/badge.svg)](https://codecov.io/github/RDocTaskForce/postlogic?branch=master) [![CRAN version](http://www.r-pkg.org/badges/version/postlogic)](https://cran.r-project.org/package=postlogic) [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 The goal of postlogic is to allow natural flowing logic statements.
 
